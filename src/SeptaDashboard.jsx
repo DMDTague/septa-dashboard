@@ -1,10 +1,3 @@
-/**
- * SEPTA Recovery Atlas - Executive Dashboard
- *
- * Requires:
- *   npm install react-leaflet leaflet recharts lucide-react
- */
-
 import React, { useState, useEffect } from 'react';
 import {
   BarChart,
@@ -1479,7 +1472,7 @@ export default function SeptaExecutiveDashboard() {
               </div>
             )}
 
-                        {/* PRIORITY */}
+            {/* PRIORITY */}
             {activeSection === 'priority' && (
               <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-200 space-y-6">
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
@@ -1586,7 +1579,7 @@ export default function SeptaExecutiveDashboard() {
                                   <div className="font-semibold text-slate-800 truncate">
                                     {seg.line} – {seg.direction}
                                   </div>
-                                  <div className="text-[10px] text-slate-500">
+                                                                    <div className="text-[10px] text-slate-500">
                                     {seg.from} → {seg.to}
                                   </div>
                                 </div>
